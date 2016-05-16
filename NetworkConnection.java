@@ -26,16 +26,19 @@ public class NetworkConnection extends AsyncTask<String,Void,String> {
         }
     }
 
+    public AsyncResponse delegate = null;
     @Override
     protected void onPostExecute(String result){
+        delegate.processFinish(result);
         Log.d("DEBUGGING",result);
+        //Good debug point @Log.d to check value of result variable
     }
 
 
     private String downloadUrl(String myurl) throws IOException{
         URL url = null;
         try {
-            url = new URL("http://www.google.com/");
+            url = new URL(myurl);
         }catch(MalformedURLException mal){}
         HttpURLConnection urlConnection = null;
         try {
@@ -68,4 +71,5 @@ public class NetworkConnection extends AsyncTask<String,Void,String> {
             return "exception in readStream";
         }
     }
+
 }
