@@ -12,9 +12,62 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Get Content"
+        android:text="Get Screenings"
         android:id="@+id/DownloadContent"
-        android:layout_marginTop="172dp"
-        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Movie 1"
+        android:id="@+id/movieOne"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="75dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Times for movie 1"
+        android:id="@+id/timesOne"
+        android:layout_below="@+id/movieOne"
+        android:layout_alignLeft="@id/movieOne"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Movie 2"
+        android:id="@+id/movieTwo"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="150dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Times for movie 2"
+        android:id="@+id/timesTwo"
+        android:layout_below="@+id/movieTwo"
+        android:layout_alignLeft="@id/movieTwo"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Movie 3"
+        android:id="@+id/movieThree"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="225dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Times for movie 3"
+        android:id="@+id/timesThree"
+        android:layout_below="@+id/movieThree"
+        android:layout_alignLeft="@id/movieThree"/>
 </RelativeLayout>
